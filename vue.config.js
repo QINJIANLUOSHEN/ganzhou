@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 /**
  * 判断是否是生产环境
  * @returns {boolean} 是否是生产环境
@@ -20,6 +22,10 @@ module.exports = {
         config.optimization.minimizer[0].options.terserOptions.compress, {
           drop_console: true,
         },
+      );
+
+      config.plugins.push(
+        new BundleAnalyzerPlugin(),
       );
     }
   },
