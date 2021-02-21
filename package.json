@@ -46,7 +46,7 @@
   },
   "lint-staged": {
     "src/**/*.{js,vue,ts}": [
-      "eslint --ext .js,.vue,.ts src",
+      "npx eslint --ext .js,.vue,.ts",
       "git add"
     ]
   }
