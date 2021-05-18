@@ -35,12 +35,16 @@
     "eslint": "^7.26.0",
     "eslint-plugin-import": "^2.23.2",
     "eslint-plugin-vue": "^7.9.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "sass": "^1.32.13",
     "sass-loader": "^11.1.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-order": "^4.1.0",
     "typescript": "~4.2.4",
-    "webpack-bundle-analyzer": "^4.4.2",
-    "husky": "^6.0.0",
-    "lint-staged": "^11.0.0"
+    "webpack-bundle-analyzer": "^4.4.2"
   },
   "husky": {
     "hooks": {
@@ -50,6 +54,9 @@
   "lint-staged": {
     "*.{js,vue,ts}": [
       "npx eslint --fix"
+    ],
+    "*.{css,scss}": [
+      "npx stylelint --fix"
     ]
   }
 }
