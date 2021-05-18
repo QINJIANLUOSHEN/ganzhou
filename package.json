@@ -20,6 +20,8 @@
     "vuex": "^4.0.0-0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
     "@vue/cli-plugin-babel": "~5.0.0-beta.1",
@@ -46,7 +48,6 @@
     "typescript": "~4.2.4",
     "webpack-bundle-analyzer": "^4.4.2"
   },
- 
   "lint-staged": {
     "*.{js,vue,ts}": [
       "npx eslint --fix"
