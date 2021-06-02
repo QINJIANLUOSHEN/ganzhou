@@ -16,5 +16,6 @@ module.exports = {
     'no-debugger': 'off',
     'import/prefer-default-export': 'off', // hook 函数不一定需要默认导出
     'max-len': ['error', { code: 160 }],
+    'multiline-comment-style': ['error', 'starred-block'], // 格式化注释
   },
 };
