@@ -2,11 +2,9 @@
  * @Author: yushuang
  * @Date: 2023-04-07 16:54:55
  * @LastEditors: yushuang
- * @LastEditTime: 2023-04-07 22:46:24
+ * @LastEditTime: 2023-04-07 23:36:38
  * @Description:
  */
-/* eslint-disable @typescript-eslint/no-var-requires */
-const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 /**
  * 判断是否是生产环境
  * @returns {boolean} 是否是生产环境
@@ -54,17 +52,5 @@ module.exports = {
   },
 
   configureWebpack: (config) => {
-    if (isProd()) {
-      // 去除 console
-      Object.assign(
-        config.optimization.minimizer[0].options.terserOptions.compress, {
-          drop_console: true,
-        },
-      );
-
-      config.plugins.push(
-        new BundleAnalyzerPlugin(),
-      );
-    }
   },
 };

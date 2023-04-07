@@ -5,6 +5,10 @@ body {
   height: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /** ****************** 修改type=number的样式 ****************** */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -24,8 +28,8 @@ select:-webkit-autofill {
   background-color: transparent;
   background-image: none;
   box-shadow: 0 0 0 1000px transparent inset !important;
-  -webkit-text-fill-color: #ededed !important;
   transition: background-color 50000s ease-in-out 0s;
+  -webkit-text-fill-color: #EDEDED !important;
 }
 
 /** ******************************************************** */

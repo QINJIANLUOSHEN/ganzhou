@@ -2,7 +2,7 @@
  * @Author: yushuang
  * @Date: 2023-04-07 16:54:55
  * @LastEditors: yushuang
- * @LastEditTime: 2023-04-07 17:15:57
+ * @LastEditTime: 2023-04-07 23:23:35
  * @Description:
  */
 module.exports = {
@@ -50,6 +50,10 @@ module.exports = {
     '@typescript-eslint/no-shadow': ['error', { ignoreTypeValueShadow: true }],
     '@typescript-eslint/no-var-requires': 0,
     'prefer-template': 'off',
+    'import/no-unresolved': 'off',
+    'import/extensions': 'off',
+    'import/no-absolute-path': 'off',
+    'import/no-extraneous-dependencies': 'off',
     // 修改函数中的参数 仅限下列中的变量才可以修改（请求接口、vuex中的state）
     'no-param-reassign': [
       'error',

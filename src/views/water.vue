@@ -2,7 +2,7 @@
  * @Author: yushuang
  * @Date: 2023-04-07 16:54:55
  * @LastEditors: yushuang
- * @LastEditTime: 2023-04-07 22:48:38
+ * @LastEditTime: 2023-04-07 23:34:08
  * @Description:
 -->
 <template>
@@ -21,8 +21,4 @@ export default defineComponent({
 </script>
 
 <style>
-div {
-  width: 10px;
-  color: #333;
-}
 </style>
