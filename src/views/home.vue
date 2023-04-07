@@ -1,20 +1,28 @@
+<!--
+ * @Author: yushuang
+ * @Date: 2023-04-07 16:54:55
+ * @LastEditors: yushuang
+ * @LastEditTime: 2023-04-07 22:20:43
+ * @Description:
+-->
 <template>
-  <hooks :title="hookTitle"></hooks>
+  <div>1111</div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import Hooks from '@/components/hooks.vue';
 
 export default defineComponent({
   name: 'Home',
-  components: {
-    Hooks,
-  },
   setup() {
-    return {
-      hookTitle: 'Hooks使用示例',
-    };
+    return {};
   },
 });
 </script>
+
+<style>
+div {
+  width: 10px;
+  color: #333;
+}
+</style>

@@ -1,5 +1,5 @@
-import http from '@/utils/http';
 import { AxiosResponse } from 'axios';
+import http from '@/utils/http';
 
 // 使用接口定义登录接口返回的数据格式·
 export interface ILogin{
